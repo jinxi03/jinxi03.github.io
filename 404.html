@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moved · Jinxi He</title>
+  <!-- GitHub Pages serves this file for every path that doesn't exist here,
+       so deep links (e.g. /projects/, /resume/Jinxi_He_Resume.pdf) land on
+       the same path at the new domain. -->
+  <script>
+    (function () {
+      var NEW_ORIGIN = "https://jinxihe03.github.io";
+      // v1 (vanilla HTML) page paths → v2 routes. Everything else keeps its path.
+      var LEGACY = {
+        "/index.html": "/",
+        "/about/about.html": "/about/",
+        "/projects/projects.html": "/projects/"
+      };
+      var path = LEGACY[location.pathname] || location.pathname;
+      location.replace(NEW_ORIGIN + path + location.search + location.hash);
+    })();
+  </script>
+  <!-- No-JS fallback only: inside <noscript> so it can't race the
+       path-preserving JS redirect above and send deep links to the root. -->
+  <noscript><meta http-equiv="refresh" content="0; url=https://jinxihe03.github.io/"></noscript>
+  <style>
+    :root { --bg: #f5f5f4; --fg: #1c1917; --muted: #78716c; --link: #1c1917; --rule: #d6d3d1; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #161514; --fg: #f5f5f4; --muted: #a8a29e; --link: #f5f5f4; --rule: #44403c; }
+    }
+    html, body { height: 100%; margin: 0; }
+    body {
+      display: grid; place-items: center; padding: 0 16px;
+      background: var(--bg); color: var(--fg);
+      font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { max-width: 32rem; text-align: center; }
+    h1 { margin: 0 0 .5rem; font: 400 2rem/1.2 Georgia, "Times New Roman", serif; }
+    p { margin: 0; color: var(--muted); }
+    a { color: var(--link); text-underline-offset: 3px; text-decoration-color: var(--rule); }
+    a:hover { text-decoration-color: currentColor; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>This site has moved</h1>
+    <p>Jinxi He's homepage is now at <a href="https://jinxihe03.github.io/">jinxihe03.github.io</a>.</p>
+  </main>
+</body>
+</html>
